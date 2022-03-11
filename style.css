@@ -20,7 +20,7 @@ body {
     'footer footer';
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .top {
@@ -149,7 +149,6 @@ form .subscribe button {
 
 .fireworks {
   grid-area: fireworks;
-  width: 100%;
 }
 
 .fireworks img {

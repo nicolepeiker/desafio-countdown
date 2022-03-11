@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #2d4972;
+  --purple: #f47458;
+  --light-grey: #c8c8c8;
+  --text-color: #50bfa5;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'countdown fireworks'
+    'footer footer';
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.top {
+  grid-area: top;
+}
+
+.top img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.countdown {
+  grid-area: countdown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+.countdown h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--purple);
+  margin-bottom: 19px;
+}
+
+table {
+  text-align: center;
+}
+
+thead {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--light-grey);
+}
+
+tbody {
+  font-weight: 400;
+  font-size: 72px;
+  color: var(--black);
+}
+
+tbody td {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.countdown p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-grey);
+}
+
+button {
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--text-color);
+  color: white;
+  height: 46px;
+  width: 160px;
+  border-radius: 10px;
+  margin-top: 31px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  padding: 40px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.modal.active form p {
+  color: var(--black);
+}
+
+form .subscribe {
+  position: relative;
+}
+
+form .subscribe input {
+  width: 389px;
+  height: 45px;
+  border-radius: 4px;
+  outline-style: none;
+  padding-left: 10px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+form .subscribe button {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  width: 100px;
+}
+
+.fireworks {
+  grid-area: fireworks;
+  width: 100%;
+}
+
+.fireworks img {
+  height: 60%;
+}
+
+footer {
+  grid-area: footer;
+}
+
+footer img {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <img src="images/top-image.svg" alt="grey marks on the top page" />
+    </div>
+    <div class="countdown">
+      <h2>New Year 2023...</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Days</td>
+            <td></td>
+            <td>Hours</td>
+            <td></td>
+            <td>Minutes</td>
+            <td></td>
+            <td>Seconds</td>
+          </tr>
+        </thead>
+        <tbody>
+          <td id="days">00</td>
+          <td>:</td>
+          <td id="hours">00</td>
+          <td>:</td>
+          <td id="minutes">00</td>
+          <td>:</td>
+          <td id="seconds">00</td>
+        </tbody>
+      </table>
+      <button id="openModal">Subscribe</button>
+      <div class="modal">
+        <form>
+          <p>
+            Subscribe to receive inspiration news and ideas for the new year.
+          </p>
+          <div class="subscribe">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail aqui "
+            />
+            <button id="closeModal" type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="fireworks">
+      <img src="images/2023.svg" alt="happy people watching fireworks" />
+    </div>
+    <footer>
+      <img src="images/bottom-image.svg" alt="grey marks on the bottom page" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

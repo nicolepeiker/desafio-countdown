@@ -83,6 +83,7 @@ button {
   width: 160px;
   border-radius: 10px;
   margin-top: 31px;
+  padding: 10px;
   border: none;
   cursor: pointer;
 }
